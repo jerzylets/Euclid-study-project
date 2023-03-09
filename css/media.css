@@ -1,0 +1,538 @@
+@media (max-width: 1765px) {
+  .section__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-us__left,
+  .about-us__right {
+    width: 70%;
+  }
+
+  .image__caption {
+    bottom: 5px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .container {
+    width: calc(100% - 100px);
+  }
+
+  .section__margin {
+    margin-bottom: 40px;
+  }
+
+  .header {
+    padding: 26px 50px;
+  }
+
+  .header__logo {
+    max-width: 150px;
+    max-height: 48px;
+  }
+
+  .nav__list {
+    row-gap: 0;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .burger {
+    display: inline-block;
+  }
+
+  .hero {
+    margin-bottom: 36px;
+  }
+
+  .hero__container {
+    padding: 160px 77px 30px;
+    background-image: url(../img/balconies-1024.jpg);
+  }
+
+  .hero__content {
+    margin-bottom: 130px;
+  }
+
+  .hero__title {
+    margin-bottom: 16px;
+    font-size: 60px;
+    line-height: 73px;
+  }
+
+  .hero__text {
+    margin-bottom: 60px;
+    max-width: 660px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .about-us {
+    margin-bottom: 77px;
+  }
+
+  .about-us__container {
+    margin-bottom: 59px;
+  }
+
+  .about-us__left,
+  .about-us__right {
+    width: 102%;
+  }
+
+  .section__container {
+    gap: 27px;
+  }
+
+  .project-steps {
+    margin-bottom: 80px;
+  }
+
+  .project-steps__title {
+    margin-bottom: 49px;
+  }
+
+  .section__nav {
+    margin-bottom: 51px;
+  }
+
+  .project-steps__part_left {
+    max-width: 53%;
+  }
+
+  .step__text {
+    margin-bottom: 23px;
+  }
+
+  .questions {
+    margin-bottom: 79px;
+  }
+
+  .footer {
+    width: 100%;
+  }
+
+  .footer__column:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .footer__column:first-child {
+    margin-right: 133px;
+  }
+
+  .footer__colunm_centred {
+    display: none;
+  }
+
+  .footer__nav {
+    margin-bottom: 92px;
+  }
+
+  .footer__logo {
+    margin-bottom: 18px;
+  }
+
+  .form__input {
+    padding: 21px 24px;
+    max-width: 541px;
+  }
+
+  .form__textarea {
+    margin-bottom: 4px;
+  }
+
+  .form__button {
+    padding: 19px 38px;
+    max-width: 241px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding: 10px 50px;
+    margin-bottom: 41px;
+  }
+
+  .hero__container {
+    padding: 160px 40px 30px;
+    background-image: url(../img/balconies-768.jpg)
+  }
+
+  .hero__title {
+    /* margin-bottom: 16px; */
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .hero__text {
+    margin-bottom: 60px;
+    max-width: 558px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .about-us__container {
+    margin-bottom: 54px;
+  }
+
+  .about-us {
+    margin-bottom: 82px;
+  }
+
+  .about-us__left {
+    width: 103%;
+  }
+
+  .image__caption {
+    max-height: 196px;
+  }
+
+  .section__article {
+    padding: 33px 46px 33px 20px;
+  }
+
+  .section__nav {
+    margin-bottom: 50px;
+  }
+
+  .article__decor {
+    margin-right: 16px;
+    min-width: 64px;
+    width: 114px;
+    height: 99px;
+  }
+
+  .nav__list {
+    justify-content: space-between;
+  }
+
+  .project-steps {
+    margin-bottom: 49px;
+  }
+
+  .project-steps__down {
+    flex-direction: column-reverse;
+    gap: 39px;
+  }
+
+  .project-steps__part {
+    max-width: 100%;
+  }
+
+  .project-steps__wrapper {
+    width: 100%;
+    height: 284px;
+  }
+
+  .step__text {
+    margin-right: 0;
+  }
+
+  .questions {
+    margin-bottom: 111px;
+  }
+
+  .questions__item {
+    font-size: var(--font-20);
+  }
+
+  .footer__container {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+
+  .footer__nav {
+    display: none;
+  }
+
+  .form__textarea {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: calc(100% - 30px);
+  }
+
+  .section__title {
+    font-size: 36px;
+    line-height: 49px;
+  }
+
+  .paragraph {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .minor-header {
+    font-weight: 500;
+  }
+
+  .header {
+    padding: 17px 15px;
+    margin-bottom: 30px;
+  }
+
+  /* .header__logo {
+    max-width: 110px;
+    max-height: 35px;
+  } */
+
+  .hero {
+    margin-bottom: 60px;
+  }
+
+  .hero__container {
+    justify-content: center;
+    padding: 60px 22px 15px;
+  }
+
+  .hero__content {
+    margin-bottom: 80px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero__title {
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 100%;
+  }
+
+  .hero__text {
+    margin-bottom: 32px;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .hero__slider {
+    left: 45%;
+  }
+
+  .slider__icon {
+    width: 10px;
+    height: 10px;
+  }
+
+  .about-us__left {
+    margin-bottom: 180px;
+    width: 100%;
+  }
+
+  .image__caption {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    bottom: -155px;
+    background-color: transparent;
+  }
+
+  .image__text {
+    margin-bottom: 12px;
+    margin-right: 0;
+    max-width: 90%;
+    font-weight: 400;
+    color: var(--black-color);
+  }
+
+  .image__button {
+    padding: 12px 44px;
+    color: var(--orange-dark);
+  }
+
+  .image__button:focus,
+  .image__button:hover {
+    color: var(--white-color);
+  }
+
+  .section__article {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    border: none;
+  }
+
+  .article__decor {
+    margin: 0;
+    margin-bottom: 12px;
+  }
+
+  .about-us {
+    margin-bottom: 60px;
+  }
+
+  .project-steps {
+    margin-bottom: 60px;
+  }
+
+  .project-steps__down {
+    gap: 16px;
+  }
+
+  .project-steps__title {
+    margin-bottom: 20px;
+  }
+
+  .step__button {
+    padding: 12px 44px;
+  }
+
+  .step__button:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .questions {
+    margin-bottom: 60px;
+  }
+
+  .questions__item {
+    font-weight: 500;
+  }
+
+  .footer__column_left {
+    align-items: center;
+  }
+
+  .footer__column_form {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #414141;
+  }
+
+  .footer__column:first-child {
+    margin: 0;
+  }
+
+  .form__input {
+    max-width: 530px;
+  }
+}
+
+@media (max-width: 575px) {
+  .btn {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .nav__list {
+    column-gap: 0;
+  }
+
+  .header__logo {
+    width: 110px;
+    height: 35px;
+  }
+
+  .hero__container {
+    padding: 60px 22px 11px;
+  }
+
+  .hero__content {
+    margin-bottom: 48px;
+  }
+
+  .hero__title {
+    margin-bottom: 6px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .hero__text {
+    margin-bottom: 34px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .hero__btn {
+    padding: 13px 31px;
+  }
+
+  .hero__slider {
+    left: 37%;
+    bottom: 11px;
+  }
+
+  .section__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .about-us__container {
+    margin-bottom: 14px;
+  }
+
+  .about-us__left {
+    margin-bottom: 200px;
+  }
+
+  .image__caption {
+    bottom: -195px;
+  }
+
+  .article__decor {
+    width: 64px;
+    height: 49px;
+  }
+
+  .minor-header {
+    max-width: 290px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .section__nav {
+    margin-bottom: 16px;
+  }
+
+  .step__button {
+    padding: 12px 31px;
+  }
+
+  .questions__title {
+    padding-bottom: 16px;
+  }
+
+  .questions__item {
+    padding: 20px 0;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .questions__icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer__container {
+    gap: 16px;
+  }
+
+  .footer__title {
+    margin-bottom: 20px;
+  }
+
+  .form__input {
+    padding: 14px 29px;
+    font-size: 14px;
+    line-height: 32px;
+  }
+
+  .form__button {
+    padding: 12px 28px;
+  }
+
+  .footer__logo {
+    margin-bottom: 16px;
+    max-width: 131px;
+    max-height: 42px;
+  }
+
+  .socials__icon {
+    width: 40px;
+    height: 40px;
+  }
+}
