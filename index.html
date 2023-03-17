@@ -25,7 +25,7 @@
       <span class="burger__line"></span>
     </button>
     <a href="#" class="logo header__logo">
-      <img src="img/logo.svg" alt="Логотип" class="logo__image">
+      <img src="img/logo.svg" alt="Логотип" class="logo__image" aria-label="Евклид. Проектные системы">
     </a>
     <nav class="nav header__nav">
       <ul class="nav__list list-reset flex">
@@ -56,7 +56,7 @@
         </li>
       </ul>
     </nav>
-    <button class="search-btn btn-reset">
+    <button class="search-btn btn-reset" aria-label="Поиск">
       <svg class="search-icon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)"
@@ -71,7 +71,7 @@
         <input type="text" class="search__input search__input_active" id="search__input"
           placeholder="Что будем искать?">
       </form>
-      <button class="search__btn search__btn_go btn-reset">
+      <button class="search__btn search__btn_go btn-reset" aria-label="Найти">
         <svg class="search__icon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <rect width="7.56126" height="1.89031"
@@ -81,7 +81,7 @@
             stroke="black" stroke-width="2" />
         </svg>
       </button>
-      <button class="search__btn search__btn_close btn-reset">
+      <button class="search__btn search__btn_close btn-reset" aria-label="Закрыть поиск">
         <svg class="close-icon close-icon_active" width="24" height="24" viewBox="0 0 24 24" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <rect x="8.9541" y="7.30432" width="11.6645" height="2.33291" transform="rotate(45 8.9541 7.30432)"
@@ -96,56 +96,67 @@
   <!-- Основной контент -->
   <main class="main">
     <section class="hero hero__background section__margin">
-
       <div class="container hero__container flex">
-        <div class="hero__content flex">
-          <h1 class="hero__title">
-            Проектные&nbspрешения любой&nbspсложности
-          </h1>
-          <p class="paragraph hero__text">
-            Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
-          </p>
-          <button class="btn hero__btn btn-reset btn-status">
-            Заказать&nbsp;расчёт
-          </button>
-        </div>
-        <div class="hero__slider slider">
-          <ul class="list-reset slider__list flex">
-            <li class="slider__item">
-              <svg class="slider__icon" width="15" height="15" viewBox="0 0 15 15" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="7.5" cy="7.5" r="7.5" fill="white" />
-              </svg>
-            </li>
-            <li class="slider__item">
-              <svg class="slider__icon" width="15" height="15" viewBox="0 0 15 15" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="7.5" cy="7.5" r="7.5" fill="#CACACA" />
-              </svg>
-            </li>
-            <li class="slider__item">
-              <svg class="slider__icon" width="15" height="15" viewBox="0 0 15 15" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="7.5" cy="7.5" r="7.5" fill="#CACACA" />
-              </svg>
-            </li>
-          </ul>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide swiper-slide-1">
+              <div class="hero__wrapper">
+                <div class="hero__content flex">
+                  <h1 class="hero__title">
+                    Проектные&nbspрешения любой&nbspсложности
+                  </h1>
+                  <p class="paragraph hero__text">
+                    Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом
+                    проектантов
+                  </p>
+                  <button class="btn hero__btn btn-reset btn-status">
+                    Заказать&nbsp;расчёт
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-2">
+              <div class="hero__wrapper">
+                <div class="hero__content flex">
+                  <h1 class="hero__title">
+                    Проектные&nbspрешения любой&nbspсложности
+                  </h1>
+                  <p class="paragraph hero__text">
+                    Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом
+                    проектантов
+                  </p>
+                  <button class="btn hero__btn btn-reset btn-status">
+                    Заказать&nbsp;расчёт
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-3">
+              <div class="hero__wrapper">
+                <div class="hero__content flex">
+                  <h1 class="hero__title">
+                    Проектные&nbspрешения любой&nbspсложности
+                  </h1>
+                  <p class="paragraph hero__text">
+                    Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом
+                    проектантов
+                  </p>
+                  <button class="btn hero__btn btn-reset btn-status">
+                    Заказать&nbsp;расчёт
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide swiper-slide-1"></div>
-        <div class="swiper-slide swiper-slide-2"></div>
-        <div class="swiper-slide swiper-slide-3"></div>
-      </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-pagination"></div>
-    </div>
     <!-- О нас -->
     <section class="section about-us section__margin_double" id="about-us">
       <div class="container about-us__container flex section__margin">
@@ -369,7 +380,7 @@
               <picture class="project-steps__wrapper">
                 <source media="(min-width: 993px) and (max-width: 1366px)" srcset="img/laptop-1024.jpg">
                 <source media="(min-width: 577px) and (max-width: 992px)" srcset="img/laptop-768.jpg">
-                <source media="(max-width: 576px)" srcset="img/laptop-320.jpg">
+                <source media="(min-width: 320px) (max-width: 576px)" srcset="img/laptop-320.jpg">
                 <img class="step__image" src="img/laptop.jpg" alt="Проект">
               </picture>
             </div>
@@ -577,7 +588,7 @@
       <div class="footer__column footer__column_left flex">
         <div class="footer__wrapper flex">
           <a href="#" class="logo footer__logo">
-            <img src="img/logo_white.svg" alt="Логотип" class="logo__image">
+            <img src="img/logo_white.svg" alt="Логотип" class="logo__image" aria-label="Евклид. Проектные системы">
           </a>
           <nav class="nav footer__nav">
             <ul class="nav__list nav__list-vertical list-reset flex">
