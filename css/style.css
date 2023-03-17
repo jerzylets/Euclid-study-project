@@ -61,6 +61,7 @@ a {
 body {
   margin: 0px auto;
   max-width: 1920px;
+  overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   background-color: var(--white-color);
@@ -206,6 +207,8 @@ circle {
   align-items: center;
   padding: 14px 75px;
   width: 100%;
+  /* overflow-x: hidden;
+  overflow-y: visible; */
   background: var(--white-color);
   border-radius: 0 0 32px 32px;
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
@@ -349,17 +352,19 @@ circle {
 }
 
 .search {
-  display: none;
-  transition: width 0.6s ease-in-out, padding 0.6s ease-in-out, position 0.6s ease-in-out, display 0.6s ease-in-out;
-}
-
-.search_active {
-  display: inline-block;
   position: absolute;
   right: 0;
   top: 18px;
+  visibility: hidden;
+  transform: translateX(120%);
+  transition: visibility 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+.search_active {
+  visibility: visible;
+  transform: none;
   padding: 16px 13px 16px 32px;
-  width: 34%;
+  width: max(539px, 33%);
   overflow: hidden;
   border-radius: 24px;
   background-color: #fff;
@@ -378,7 +383,7 @@ circle {
 
 .search__input_active {
   display: inline-block;
-  width: 73%;
+  width: 82%;
 }
 
 .search__btn {
@@ -482,7 +487,15 @@ circle {
 .swiper {
   margin: 0 auto;
   width: 100%;
-  height: 300px;
+  min-height: 620px;
+
+}
+
+.swiper-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 32px;
 }
 
 .swiper-slide-1 {
@@ -499,6 +512,7 @@ circle {
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 10px;
   width: 15px;
   height: 15px;
   background: var(--grey-light);
@@ -511,18 +525,20 @@ circle {
 
 .hero__container {
   position: relative;
-  padding: 100px 80px 30px;
-  background-image: url(../img/balconies.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: var(--font-32);
   overflow: hidden;
 }
 
+.hero__wrapper {
+  padding: 100px 80px;
+  min-height: 67%;
+}
+
 .hero__content {
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 55px;
   width: min(47%, 837px);
 }
 
@@ -547,27 +563,6 @@ circle {
 .hero__btn {
   font-size: 23px;
   line-height: 28px;
-}
-
-.hero__slider {
-  position: absolute;
-  bottom: 30px;
-  left: 48%;
-  align-self: center;
-  opacity: 1;
-}
-
-.slider__list {
-  gap: var(--font-20);
-}
-
-.slider__item {
-  background-color: transparent;
-  overflow: hidden;
-}
-
-.hero__bullit {
-  overflow: hidden;
 }
 
 /* О нас */
@@ -848,6 +843,7 @@ circle {
 
 .questions__icon {
   flex-shrink: 0;
+  transition: transform .6s ease-in-out;
 }
 
 .questions__icon ellipse {
@@ -859,9 +855,16 @@ circle {
   transition: fill 0.6s ease-in-out;
 }
 
-.questions__item:focus {
-  border-bottom: 1px solid var(--orange-dark);
+.questions__item:focus-within {
   border-top: 1px solid var(--orange-dark);
+}
+
+.questions__item:focus-within+.questions__item {
+  border-top: 1px solid var(--orange-dark);
+}
+
+.questions__item:focus-within:last-child {
+  border-color: var(--orange-dark);
 }
 
 .questions__item:focus .accordion__control {
@@ -924,7 +927,7 @@ circle {
   width: 100%;
 }
 
-/* .accordion__control:focus {
+.accordion__control:focus {
   color: var(--orange-dark);
 }
 
@@ -934,7 +937,7 @@ circle {
 
 .accordion__control:focus .questions__icon path {
   fill: var(--white-color);
-} */
+}
 
 .accordion__content {
   overflow: hidden;
